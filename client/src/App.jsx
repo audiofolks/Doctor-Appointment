@@ -6,6 +6,7 @@ import SignIn from "./pages/SignIn";
 import About from "./pages/About";
 import FindDoc from "./pages/FindDoc";
 import Header from "./components/Header";
+import Footer from "./components/Footer"
 
 
 export default function App() {
@@ -18,8 +19,9 @@ export default function App() {
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/FindDoc" element={<FindDoc />} />
+        <Route path="/find-doc" element={<FindDoc />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

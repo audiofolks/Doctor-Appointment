@@ -1,7 +1,7 @@
 import { Button, Navbar, TextInput } from "flowbite-react";
 import { Link, useLocation } from "react-router-dom";
 import { BsSearchHeart } from "react-icons/bs";
-import { FaMoon } from "react-icons/fa";
+import { LuMoonStar } from "react-icons/lu";
 import { TiPlus } from "react-icons/ti";
 
 export default function Header() {
@@ -20,7 +20,7 @@ export default function Header() {
 
       <div className="flex gap-2 md: order-2">
         <Button className="w-12 h-10 hidden sm:inline " color="gray" pill>
-          <FaMoon />
+        <LuMoonStar />
         </Button>
         <Link to="/sign-in">
           <Button gradientDuoTone="greenToBlue">Sign In</Button>
@@ -35,7 +35,7 @@ export default function Header() {
           <Link to="/services">Services</Link>
         </Navbar.Link>
         <Navbar.Link active={Path == "/FindDoc"} as="div">
-          <Link to="/FindDoc">Find a doctor</Link>
+          <Link to="/find-doc">Find a doctor</Link>
         </Navbar.Link>
         <Navbar.Link active={Path == "/about"} as="div">
           <Link to="/about">About</Link>
