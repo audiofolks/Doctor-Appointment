@@ -22,8 +22,8 @@ export default function Header() {
         <Button className="w-12 h-10 hidden sm:inline " color="gray" pill>
         <LuMoonStar />
         </Button>
-        <Link to="/sign-in">
-          <Button gradientDuoTone="greenToBlue">Sign In</Button>
+        <Link to="/sign-up">
+          <Button gradientDuoTone="greenToBlue">Sign up</Button>
         </Link>
         <Navbar.Toggle />
       </div>
