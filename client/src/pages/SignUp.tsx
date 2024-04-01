@@ -32,7 +32,7 @@ export default function SignUp() {
 
       setLoading(false);
       if (res.ok) {
-        navigate("/sign-in");
+        navigate("/auth/sign-in");
       }
     } catch (error) {
       setErrorMessages(errorMessages);
@@ -40,8 +40,8 @@ export default function SignUp() {
     }
   };
   return (
-    <section className="bg-gray-50 dark:bg-gray-900">
-      <div className="flex flex-col items-center justify-center px-6 py-2 mx-auto ">
+    <section className="bg-gray-50 dark:bg-gray-900 h-full">
+      <div className="flex flex-col items-center justify-center px-6 py-2 mx-auto h-full">
         <div className=" py-3 flex self-center whitespace-nowrap text-sm sm:text-lg font-semibold  dark:text-white">
           <span className="px-2 py-1 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg text-white">
             EaseMediCare
@@ -51,7 +51,7 @@ export default function SignUp() {
         <div className=" w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-            Create Your Account
+              Create Your Account
             </h1>
             <form
               className="space-y-4 md:space-y-6 onsub"
@@ -100,7 +100,7 @@ export default function SignUp() {
               </Button>
               <div className="flex gap-2 text-sm mt-5">
                 <span>Already have an account? </span>
-                <Link to="/sign-in" className="text-blue-500">
+                <Link to="/auth/sign-in" className="text-blue-500">
                   Login here
                 </Link>
               </div>
