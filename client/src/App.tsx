@@ -22,8 +22,7 @@ const router = createBrowserRouter(
 
 export default function App() {
   return (
-    <BrowserRouter>
-     
+    <BrowserRouter> 
       <Routes>
         <Route path="/" element={<RootLayout />}>
           <Route path="/home" element={<Home />} />

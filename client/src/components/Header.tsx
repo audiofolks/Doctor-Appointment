@@ -20,7 +20,7 @@ export default function Header() {
 
       <div className="flex gap-2 md: order-2">
         <Button className="w-12 h-10 hidden sm:inline " color="gray" pill>
-        <LuMoonStar />
+          <LuMoonStar />
         </Button>
         <Link to="/auth/sign-up">
           <Button gradientDuoTone="greenToBlue">Sign up</Button>
@@ -29,7 +29,7 @@ export default function Header() {
       </div>
       <Navbar.Collapse>
         <Navbar.Link active={Path == "/"} as="div">
-          <Link to="/">Home</Link>
+          <Link to="/home">Home</Link>
         </Navbar.Link>
         <Navbar.Link active={Path == "/services"} as="div">
           <Link to="/services">Services</Link>
