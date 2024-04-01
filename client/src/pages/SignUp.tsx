@@ -42,12 +42,15 @@ export default function SignUp() {
   return (
     <section className="bg-gray-50 dark:bg-gray-900 h-full">
       <div className="flex flex-col items-center justify-center px-6 py-2 mx-auto h-full">
-        <div className=" py-3 flex self-center whitespace-nowrap text-sm sm:text-lg font-semibold  dark:text-white">
+        <Link
+          to="/"
+          className=" flex self-center whitespace-nowrap text-sm sm:text-xl font-semibold"ஃ
+        >
           <span className="px-2 py-1 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg text-white">
             EaseMediCare
           </span>
           <TiPlus />
-        </div>
+        </Link>
         <div className=" w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
