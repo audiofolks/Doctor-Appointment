@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <Navbar className=" border-b-2">
       <Link
-        to="/"
+        to="/home"
         className=" flex self-center whitespace-nowrap text-sm sm:text-xl font-semibold"
       >
         <span className="px-2 py-1 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg text-white">

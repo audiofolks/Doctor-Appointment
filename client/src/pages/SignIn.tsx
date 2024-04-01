@@ -42,7 +42,7 @@ export default function SignIn() {
   return (
     <section className="bg-gray-50 dark:bg-gray-900 h-full">
       <div className="flex flex-col items-center justify-center px-6 py-2 mx-auto h-full">
-        <Link to="/"
+        <Link to="/home"
         className=" flex self-center whitespace-nowrap text-sm sm:text-xl font-semibold">
           <span className="px-2 py-1 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg text-white">
             EaseMediCare
